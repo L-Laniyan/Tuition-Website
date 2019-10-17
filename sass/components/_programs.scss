@@ -1,0 +1,62 @@
+.programs{
+//background-color: $color-black;
+
+width: 100%;
+margin-top: -5vh;
+margin-left: 8rem;
+
+height: 50rem;
+  &__card{
+
+    &--1{
+      background-color: #ef4b4b;//#dd3333 ; //
+//background-image: linear-gradient(to right bottom, rgba($color-white, 0.5), rgba($color-black, -0.5));
+height: 10rem;
+padding: 3rem 3.2rem;
+
+
+
+    }
+
+    &--2{
+background-color: $color-tertiary-light;
+background-image: linear-gradient( rgba($color-white, 0.5), rgba($color-black, -0.5));
+height: 10rem;
+padding: 3rem 3.2rem
+
+    }
+
+    &--3{
+background-image: linear-gradient(to right, blue, purple);
+height: 10rem;
+padding: 3rem 3.2rem
+}
+
+&--4{
+background-color: #f6f078; //#ffe7ad
+height: 10rem;
+padding: 3rem 3.2rem;
+top: 1;
+
+
+}
+
+&--5{
+background-image: linear-gradient(to right, $color-green, $color-green-light);
+height: 10rem;
+padding: 3rem 3.2rem
+
+}
+
+&--6{
+background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+height: 10rem;
+padding: 3rem 3.2rem
+}
+  }
+
+}
+
+.container{
+  margin: -80rem 0 0 38.2rem;
+}
