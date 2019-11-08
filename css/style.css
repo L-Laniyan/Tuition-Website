@@ -121,6 +121,10 @@ body {
   height: 80rem;
   padding: 25rem 0; }
 
+.section-tour {
+  position: relative;
+  height: 100rem; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -257,6 +261,109 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.slide-container {
+  width: 60%;
+  height: 40rem;
+  margin-left: 40rem;
+  padding-top: 30rem;
+  overflow: hidden; }
+  .slide-container__image {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: webzone 20s infinite linear; }
+    .slide-container__image--photo {
+      width: 20%;
+      height: 50rem;
+      float: left; }
+
+@keyframes webzone {
+  0% {
+    left: 0%; }
+  15% {
+    left: 0%; }
+  20% {
+    left: -100%; }
+  35% {
+    left: -100%; }
+  40% {
+    left: -200%; }
+  60% {
+    left: -200%; }
+  65% {
+    left: -300%; }
+  80% {
+    left: -300%; }
+  85% {
+    left: -400%; }
+  100% {
+    left: -400%; }
+  /*100%{left: -500%;}
+  100%{left: -500%;}
+  135%{left: -600%;}
+  140%{left: -600%;}
+  160%{left: -700%;}
+  165%{left: -700%;}*/ }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.testimonials {
+  background: #161d25;
+  width: 19%;
+  height: 40%;
+  padding-left: 5rem;
+  margin-top: -41.9rem; }
+  .testimonials__text {
+    display: block;
+    width: 35rem;
+    height: 7rem;
+    float: left;
+    font-size: 1.2rem;
+    letter-spacing: .8px; }
+  .testimonials__carousel {
+    outline: 1px solid red;
+    width: 35rem;
+    height: 20rem;
+    padding-left: 3px;
+    margin-right: -3.3rem;
+    margin-left: -2.5rem;
+    overflow-x: hidden; }
+    .testimonials__carousel--content {
+      list-style: none;
+      display: flex;
+      animation-name: slide;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both; }
+      .testimonials__carousel--content:hover {
+        animation-play-state: paused; }
+
+@keyframes slide {
+  10% {
+    transform: translateX(0); }
+  15%, 30% {
+    transform: translateX(-35rem); }
+  35%, 50% {
+    transform: translateX(-70.1rem); }
+  55%, 70% {
+    transform: translateX(-105.1rem); }
+  75%, 90% {
+    transform: translateX(0); } }
 
 .header {
   height: 95vh;
